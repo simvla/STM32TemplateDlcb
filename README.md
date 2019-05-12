@@ -1,2 +1,2 @@
-# dlcb.stm32f103
-data-log-control-board software template
+stm32f103xx software template based on HAL
+
