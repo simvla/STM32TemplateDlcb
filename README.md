@@ -13,10 +13,13 @@ On Windows go to command promt,switch to C:\CBSTM32\proj and clone stm32f103_Pro
 git clone https://github.com/simvla/stm32f103xx_ProjTemplate_cb  
 Download stm32 programmer and extract to C:\CBSTM32  
 https://libstock.mikroe.com/projects/download/1862/10967/1531996605_mikrobootloader_other_other.zip  
-In CBSTM32 folder go to cbxx folder and open codeblocks  
-on file menu click open... , navigate to proj/stm32f103xx_ProjTemplate_cb and open stm32f103xx_ProjTemplate_cb.cbp  
-go to Build menu and click Rebuild,after build is complete go to Tools and click bootloader tool  
-Insert usb cable on board and pc click connect , browse hex file then upload
+In CBSTM32 folder go to cbxx folder then open codeblocks  
+on file menu click open... , navigate to proj/stm32f103xx_ProjTemplate_cb, open stm32f103xx_ProjTemplate_cb.cbp  
+go to Build menu, click Rebuild,after build is complete go to Tools and click bootloader tool  
+Insert usb cable on board and pc click connect, wait for device id to appear  
+Browse hex file(proj folder\bin\Release\stm32f103_ProjTemplate_cb.hex then click upload  
+
+for details about DLCB and software conntact me on mail: vlada984@ymail.com
 
 
 
