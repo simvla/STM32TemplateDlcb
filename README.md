@@ -22,7 +22,7 @@ Browse hex file(proj folder\bin\Release\stm32f103_ProjTemplate_cb.hex) then clic
 ## *DLCB images :*  
 
 ![DLCB_pr_w1](https://user-images.githubusercontent.com/50554409/57645231-1ea6e180-75be-11e9-88b3-cb45adcaf1ad.png)  
-          img1-board in field environment  
+img1-board in greenhouse environment  
 
 
 
