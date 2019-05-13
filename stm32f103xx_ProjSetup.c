@@ -7,7 +7,7 @@ uint32_t SpixTimeout = SPIx_TIMEOUT_MAX;
 static SPI_HandleTypeDef h_Spi;
 
 /* Private functions -------------------------------------------------*/
-//SPI config functions
+//SPI IO/COM functions
 static void SPIx_GpioInit(void)
 {
   GPIO_InitTypeDef  gpioinitstruct = {0};
