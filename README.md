@@ -16,7 +16,7 @@ https://libstock.mikroe.com/projects/download/1862/10967/1531996605_mikrobootloa
 In CBSTM32 folder go to cbxx folder and open codeblocks  
 on file menu click open... , navigate to proj/stm32f103xx_ProjTemplate_cb and open stm32f103xx_ProjTemplate_cb.cbp  
 go to Build menu and click Rebuild,after build is complete go to Tools and click bootloader tool  
-Insert usb cable on board and pc click connect , browse hex and upload
+Insert usb cable on board and pc click connect , browse hex file then upload
 
 
 
