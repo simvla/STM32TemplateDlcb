@@ -24,6 +24,7 @@ Browse hex file(proj folder\bin\Release\stm32f103_ProjTemplate_cb.hex) then clic
 [img1](http://www.mediafire.com/view/kyrceo39jrqsq5f/DLCB_pr_w1.png/file)-board in field environment  
 
 
+
 for details about DLCB and software contact me on mail: vlada984@ymail.com
 
 
