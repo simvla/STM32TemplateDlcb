@@ -116,30 +116,30 @@ void LCD_IO_WriteMultipleData(uint8_t *pData, uint32_t Size)
     SPIx_Write(*pData);
   }
   else
-{
+  {
     /* Several data should be sent in a raw */
     /* Direct SPI accesses for optimization */
     for (counter = Size; counter != 0; counter--)
-  {
+    {
       while(((h_Spi.Instance->SR) & SPI_FLAG_TXE) != SPI_FLAG_TXE)
-  {
-}
+      {
+      }
       /* Need to invert bytes for LCD*/
       *((__IO uint8_t*)&h_Spi.Instance->DR) = *(pData+1);
 
       while(((h_Spi.Instance->SR) & SPI_FLAG_TXE) != SPI_FLAG_TXE)
-{
-}
+      {
+      }
       *((__IO uint8_t*)&h_Spi.Instance->DR) = *pData;
       counter--;
       pData += 2;
-  }
+    }
 
     /* Wait until the bus is ready before releasing Chip select */
     while(((h_Spi.Instance->SR) & SPI_FLAG_BSY) != RESET)
-  {
+    {
+    }
   }
-}
   /* Deselect : Chip Select high */
   LCD_CS_HIGH();
 }
