@@ -18,18 +18,21 @@
 int main(void)
 {
   /* StartupSetup-------------------------------------------------*/
-  HAL_Init(); //hardwareAbstractionLayer lib
-  SystemClock_Config(); //sysClock(72MHz)
-  OnBoardLED_Init();//PC13
-  TFT_LCD_Init();//tftLcd set
+  //System 
+  HAL_Init(); //"hardwareAbstractionLayerLib initialize"-call for each new proj
+  SystemClock_Config(); //set sysClock(72MHz)-call for each new proj
+  //User 
+  OnBoardLED_Init();//set Led port(PC13)
+  TFT_LCD_Init();//set tftLcd gpio and init sequence 
 
-  //print message
-  TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!");
+  //Do on startup
+  TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!"); //print message on tftLcd
 
   /* Main Loop CyclicExecution-------------------------------------*/
   while(1){
-    HAL_GPIO_TogglePin(LED_PORT, LED_PIN);
-    Delay_ms(500);
+   //Led blink 
+   HAL_GPIO_TogglePin(LED_PORT, LED_PIN);
+   Delay_ms(500);
   }
 }
 
