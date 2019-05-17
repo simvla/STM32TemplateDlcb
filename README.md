@@ -1,8 +1,9 @@
 ## *Project description :*
 
 Stm32f103xx HAL based template for DLCB and CodeBlocks IDE  
-DLCB "data log and control board" is mini dev board/adapter based on stm32 "bluepill" board with preloaded bootloader  
-contains tftLcd color 1.8 inch disp,three push buttons,status led and IO pin connectors   
+DLCB "data log and control board" is mini educational board for acquire,analyze and display data and control other devices  
+DLCB is based on stm32 "bluepill" board with preloaded bootloader  
+Contains tftLcd color 1.8 inch disp,three push buttons,status led and IO pin connectors   
 Has a prepared toolchain to start develop immediately
 
 ## *Usage instructions :*
@@ -22,7 +23,7 @@ Browse hex file(proj folder\bin\Release\stm32f103_ProjTemplate_cb.hex) then clic
 ## *DLCB images :*  
 
 ![DLCB_pr_w1](https://user-images.githubusercontent.com/50554409/57645231-1ea6e180-75be-11e9-88b3-cb45adcaf1ad.png)  
-img1-board in greenhouse environment  
+img1-board mounted on front panel with printed mask  
 
 
 
