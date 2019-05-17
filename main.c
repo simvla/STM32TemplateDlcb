@@ -25,8 +25,8 @@ int main(void)
   OnBoardLED_Init();//set Led port(PC13)
   TFT_LCD_Init();//set tftLcd gpio and init sequence 
 
-  //Startup code
-  TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!"); //print message on tftLcd
+  //print message on tftLcd
+  TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!"); 
 
   /* Main Loop CyclicExecution-------------------------------------------------*/
   while(1){
