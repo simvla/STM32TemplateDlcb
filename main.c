@@ -17,17 +17,18 @@
 /* USER Program control flow---------------------------------------*/
 int main(void)
 {
-  /* ProjConfiguration-------------------------------------------------------------*/ 
-  //System config(important calls for each project)
-  HAL_Init(); //"hardwareAbstractionLayerLib" initialize
+  /* StartupSetup-------------------------------------------------------------*/ 
+  //Essential(call for each project)
+  HAL_Init(); //"hardwareAbstractionLayer" lib initialize
   SystemClock_Config(); //set sysClock(72MHz)
-  //User config(project specific)
-  OnBoardLED_Init();//set Led port(PC13)
-  TFT_LCD_Init();//set tftLcd gpio and init sequence 
-
-  //print message on tftLcd
+  
+  //Project specific
+  OnBoardLED_Init(); //set led port(PC13)
+  TFT_LCD_Init(); //set tftLcd gpio and init sequence 
+  
+  //print message
   TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!"); 
-
+  
   /* Main Loop CyclicExecution-------------------------------------------------*/
   while(1){
    //Led blink 
