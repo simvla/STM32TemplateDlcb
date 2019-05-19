@@ -14,10 +14,10 @@
 /* USER variables -------------------------------------------------*/
 /* USER functions -------------------------------------------------*/
 
-/* USER Program control flow---------------------------------------*/
+/* USER Program ---------------------------------------------------*/
 int main(void)
 {
-  /* StartupSetup-------------------------------------------------------------*/ 
+  /* StartupSetup ------------------------------------------------------------*/ 
   //Essential(call for each project)
   HAL_Init(); //"hardwareAbstractionLayer" lib initialize
   SystemClock_Config(); //set sysClock(72MHz)
@@ -29,7 +29,7 @@ int main(void)
   //print message
   TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!"); 
   
-  /* Main Loop CyclicExecution-------------------------------------------------*/
+  /* Main Loop CyclicExecution ------------------------------------------------*/
   while(1){
    //Led blink 
    HAL_GPIO_TogglePin(LED_PORT, LED_PIN);
