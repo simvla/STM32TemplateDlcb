@@ -171,12 +171,6 @@ void OnBoardLED_Init() {
 //SysClock config(SysClock source=PLL(HSE),SYSCLK(Hz)=72000000,HSE Freq(Hz)=8000000,PLLMUL=9..)
 void SystemClock_Config(void)
 {
-  //check if jtag pins set as gpio
-  #ifdef USE_JTAG_asGPIO
-    __HAL_RCC_AFIO_CLK_ENABLE();
-    __HAL_AFIO_REMAP_SWJ_NOJTAG();
-  #endif
-
   RCC_OscInitTypeDef oscinitstruct = {0};
   RCC_ClkInitTypeDef clkinitstruct = {0};
 
@@ -198,7 +192,12 @@ void SystemClock_Config(void)
   clkinitstruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
   HAL_RCC_ClockConfig(&clkinitstruct, FLASH_LATENCY_0);
-
+  
+  //check if jtag pins set as gpio
+  #ifdef USE_JTAG_asGPIO
+    __HAL_RCC_AFIO_CLK_ENABLE();
+    __HAL_AFIO_REMAP_SWJ_NOJTAG();
+  #endif
 }
 
 
