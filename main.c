@@ -18,18 +18,18 @@
 int main(void)
 {
   /* StartupSetup ------------------------------------------------------------*/ 
-  //Essential(call for each project)
+  //Essential (call for each project)
   HAL_Init(); //"hardwareAbstractionLayer" lib initialize
   SystemClock_Config(); //set sysClock(72MHz)
   
-  //Project specific
+  //ProjSpecific
   OnBoardLED_Init(); //set led port(PC13)
   TFT_LCD_Init(); //set tftLcd gpio and init sequence 
   
   //print message
   TFT_LCD_DisplayStringAtLine(1,(uint8_t*)"WELCOME!"); 
   
-  /* Main Loop CyclicExecution ------------------------------------------------*/
+  /* Main Loop ---------------------------------------------------------------*/
   while(1){
    //Led blink 
    HAL_GPIO_TogglePin(LED_PORT, LED_PIN);
@@ -40,6 +40,6 @@ int main(void)
 
 
 
-
+//this software using STM32 HAL libraries by STMicroelectronics :
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
