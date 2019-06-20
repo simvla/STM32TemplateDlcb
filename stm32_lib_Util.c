@@ -6,9 +6,9 @@
 /* Private functions -------------------------------------------------*/
 /* Private variables -------------------------------------------------*/
 
-char* uitoa(uint16_t n)   //konverzija neoznacene int vrednosti u odgovarajuci string
+char* uitoa(uint16_t n)   //convert unsigned int to string
 {
-  uint8_t dh,h,s,ds,j; //deset hiljada,hiljada,stote,desetice,jedinice
+  uint8_t dh,h,s,ds,j; //ten thousand,thousand,hundred,ten,one
   static char a[2];  //0-9 + null
   static char b[3];  //10-99 + null
   static char c[4];  //100-999 + null
