@@ -71,15 +71,15 @@ int main(void)
 
     // Disp BL off after time exired
     if ((HAL_GetTick() - dispBlTick) > 300000) { //5min
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
     }
 
 	// Disp BL On when TS1 pressed
-	if(!HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_15)) {
+    if(!HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_15)) {
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
       Delay_ms(200); //wait for release
       dispBlTick = HAL_GetTick(); //set new time
-	}
+    }
 
     // TftLcd test
     //tftLcd_println("Hello!",0,0);
@@ -125,8 +125,8 @@ void SetPinsAsOut(void){
 
 // Each app must implement this function as is
 // or create custom clock configuration
-void SystemClock_Config(void)
-{
+void SystemClock_Config(void) {
+  
   // Use jtag pins as gpio
   #ifdef USE_JTAG_asGPIO
     __HAL_RCC_AFIO_CLK_ENABLE();
