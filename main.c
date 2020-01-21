@@ -74,7 +74,7 @@ int main(void)
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
     }
 
-	// Disp BL On when TS1 pressed
+    // Disp BL On when TS1 pressed
     if(!HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_15)) {
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
       Delay_ms(200); //wait for release
