@@ -9,7 +9,7 @@ Has a prepared toolchain to start develop immediately
 ## *Usage instructions :*
 
 Download toolchain archive file(CBSTM32.rar) and extract to C:\CBSTM32  
-[tool](http://www.mediafire.com/file/lpfqq91aabzrgoa/CBSTM32.rar/file)  
+[tool](http://www.mediafire.com/file/1up08iaxh97kk4d/CBSTM32.rar/file)  
 On Windows go to command promt,switch to C:\CBSTM32\proj and clone STM32TemplateDlcb repo  
 git clone https://github.com/simvla/STM32TemplateDlcb  
 Download stm32 programmer and extract to C:\CBSTM32  
