@@ -14,9 +14,9 @@ On Windows go to command promt,switch to C:\CBSTM32\proj and clone STM32Template
 git clone https://github.com/simvla/STM32TemplateDlcb  
 Download stm32 programmer and extract to C:\CBSTM32  
 [prog](https://libstock.mikroe.com/projects/download/1862/10967/1531996605_mikrobootloader_other_other.zip)  
-In CBSTM32 folder go to cbxx folder then open codeblocks  
+In CBSTM32 folder go to cbxx folder then open codeblocksSTM32  
 on file menu click open... , navigate to proj/STM32TemplateDlcb, open STM32TemplateDlcb.cbp  
-go to Build menu, click Rebuild,after build is complete go to Tools and click bootloader tool  
+go to Build menu, click Rebuild,after build is complete go to Tools and click STM32-boot  
 Insert usb cable on board and pc, wait for device id to appear, click connect  
 Browse hex file(proj folder\bin\Release\STM32Template.hex) then click upload  
 
