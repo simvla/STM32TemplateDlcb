@@ -22,7 +22,7 @@ Browse hex file(proj folder\bin\Release\STM32Template.hex) then click upload
 
 ## *DLCB images :*  
 
-![DLCB_pr_w1](https://user-images.githubusercontent.com/50554409/57645231-1ea6e180-75be-11e9-88b3-cb45adcaf1ad.png)  
+![DLCB_pr_w2](https://user-images.githubusercontent.com/50554409/72880197-affa5600-3cfe-11ea-9a9c-0e51a42ec95e.png) 
 img1-board mounted on front panel with printed mask  
 
 
