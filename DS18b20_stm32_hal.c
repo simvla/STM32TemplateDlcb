@@ -191,14 +191,15 @@ uint8_t ds18b20_read(char* tstr,uint8_t id[]){
   decToOne=decimal/1000; //strip to one num precision (9375/1000 -> 9)
   //format
   tempInt=(decToOne+(digit*10)); // 10.9 -> (10*10)+9=109
-  if(minus){
+  if(minus) {
     strcpy(tempStr,addDecPoint(tempInt));
     addchl(tempStr,'-',sizeof(tempStr));
     strcpy(tstr,tempStr);
+  }else {
+    strcpy(tempStr,addDecPoint(tempInt));
+    strcat(tempStr," ");
+    strcpy(tstr,tempStr);
   }
-  strcpy(tempStr,addDecPoint(tempInt));
-  strcat(tempStr," ");
-  strcpy(tstr,tempStr);
 
  return 0; // Read OK
 
