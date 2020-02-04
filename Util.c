@@ -85,7 +85,7 @@ uint8_t addchl(char* str,char c,uint8_t len){
   //check if char array is full
   if(n >(len-1)) return 1; //error char array full,exit
   //move chars one place right
-  while(i<n){
+  while(i<=n){
     tmp=*(str-i);
     *(str-j)=tmp;
     j++;
