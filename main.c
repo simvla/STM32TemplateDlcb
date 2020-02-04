@@ -7,16 +7,16 @@
 #include "Util.h"
 #include "string.h"
 
-// Definitions:
+// App Definitions:
 #define USE_JTAG_asGPIO
 
-// Vars:
-// ds18b20
+// App Vars:
+// DS18b20
 char tempStr[10];
 uint8_t addr1[8]={0}; //only one sensor
-// system
+// System
 uint32_t dispBlTick = 0; //display backlight off time
-// tft
+// Tft
 extern const uint16_t lcd_bck_img[]; //Lcd background image
 
 // Function prototypes:
@@ -69,7 +69,7 @@ int main(void)
     ds18b20_read(tempStr,addr1);
     tftLcd_println(tempStr,2,0);
 
-    // Disp BL off after time exired
+    // Disp BL off after time expired
     if ((HAL_GetTick() - dispBlTick) > 300000) { //5min
       HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
     }
